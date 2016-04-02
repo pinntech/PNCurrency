@@ -70,15 +70,50 @@ writing your own:
 
 Here's the quick jist of how to get started using PNCurrency
 
-###### Initialization
+#### Initialization
 
 Theres a few different ways to instantiate a new PNCurrency object
 
-###### Setters
+###### Init
 
-###### Getters
+The plain init will default the amount to zero. Just alloc init the object like so:
 
-###### Formatters
+```objc
+PNCurrency *currency = [[PNCurrency alloc] init];
+```
+
+###### Init With Cents Amount
+
+To create the object when you have an amount in cents use this:
+
+```objc
+// Initialize currency to a dollar
+PNCurrency *currency = [[PNCurrency alloc] initWithCentsAmount:100];
+```
+
+###### Init With Double Amount
+
+You might have a raw double, in which case you'll want to use this:
+
+```objc
+// Initialize currency to a dollar
+PNCurrency *currency = [[PNCurrency alloc] initWithDoubleAmount:1.00];
+```
+
+###### Init With String Amount
+
+Finally if you have a string that represents the amount you can feed that in as well:
+
+```objc
+// Initialize currency to a dollar
+PNCurrency *currency = [[PNCurrency alloc] initWithStringAmount:@"1.00"];
+```
+
+#### Setters
+
+#### Getters
+
+#### Formatters
 
 ### Docs
 --------
