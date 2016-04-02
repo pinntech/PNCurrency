@@ -70,11 +70,11 @@ writing your own:
 
 Here's the quick jist of how to get started using PNCurrency
 
-#### Initialization
+##### Initialization
 
 Theres a few different ways to instantiate a new PNCurrency object
 
-###### Init
+###### - init
 
 The plain init will default the amount to zero. Just alloc init the object like so:
 
@@ -82,7 +82,7 @@ The plain init will default the amount to zero. Just alloc init the object like 
 PNCurrency *currency = [[PNCurrency alloc] init];
 ```
 
-###### Init With Cents Amount
+###### - initWithCentsAmount
 
 To create the object when you have an amount in cents use this:
 
@@ -91,7 +91,7 @@ To create the object when you have an amount in cents use this:
 PNCurrency *currency = [[PNCurrency alloc] initWithCentsAmount:100];
 ```
 
-###### Init With Double Amount
+###### - initWithDoubleAmount
 
 You might have a raw double, in which case you'll want to use this:
 
@@ -100,7 +100,7 @@ You might have a raw double, in which case you'll want to use this:
 PNCurrency *currency = [[PNCurrency alloc] initWithDoubleAmount:1.00];
 ```
 
-###### Init With String Amount
+###### - initWithStringAmount
 
 Finally if you have a string that represents the amount you can feed that in as well:
 
@@ -109,11 +109,11 @@ Finally if you have a string that represents the amount you can feed that in as 
 PNCurrency *currency = [[PNCurrency alloc] initWithStringAmount:@"1.00"];
 ```
 
-#### Setters
+##### Setters
 
-#### Getters
+##### Getters
 
-#### Formatters
+##### Formatters
 
 ### Docs
 --------
