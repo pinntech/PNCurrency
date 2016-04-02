@@ -72,7 +72,8 @@ Here's the quick jist of how to get started using PNCurrency
 
 ##### Initialization
 
-Theres a few different ways to instantiate a new PNCurrency object
+Theres a few different ways to instantiate a new PNCurrency object, here they
+are to show you how to best init the object for your usage.
 
 ###### - init
 
@@ -111,9 +112,53 @@ PNCurrency *currency = [[PNCurrency alloc] initWithStringAmount:@"1.00"];
 
 ##### Setters
 
+Theres a good chance you're going to want to update the currency value to
+something else in the objects lifetime, this can be done easily a few different
+ways
+
+###### - centsAmounts
+
+###### - setWithDoubleAmount
+
+###### - setWithStringAmount
+
 ##### Getters
 
+Nothing fancy here but safe convenient autoconversions, when you need to 
+actually return the value here's what to do
+
+###### - centsAmount
+
+###### - doubleAmount
+
+###### - stringAmount
+
 ##### Formatters
+
+Often you'll want to print this stuff to the screen so chances are you will
+want something like "$1.00" as opposed to a double or amount in cents. These
+are the convenience formatters.
+
+###### - formattedAmount
+
+Simply prints the value formatted with the dollar sign right in front
+
+```objc
+// Initialize currency to a dollar
+PNCurrency *currency = [[PNCurrency alloc] initWithCentsAmount:100];
+NSLog(@"%@", [currency formattedAmount]) // prints "$1.00"
+```
+
+###### - formattedAmountWithSpace
+
+Prints the dollar sign in front of the amount but with a space between the $
+and the amount itself
+
+```objc
+// Initialize currency to a dollar
+PNCurrency *currency = [[PNCurrency alloc] initWithCentsAmount:100];
+NSLog(@"%@", [currency formattedAmountWithSpace]) // prints "$ 1.00"
+```
 
 ### Docs
 --------
