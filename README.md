@@ -129,9 +129,34 @@ actually return the value here's what to do
 
 ###### - centsAmount
 
+You can utilize the cents amount property to get the raw amount of cents as an
+unsigned integer
+
+```objc
+// Initialize currency to a dollar
+PNCurrency *currency = [[PNCurrency alloc] initWithStringAmount:@"1.00"];
+[current centsAmounts] // Value is 100
+```
+
 ###### - doubleAmount
 
+Returns the amount as a double value, may be truncated for trailing zeroes
+
+```objc
+// Initialize currency to a dollar
+PNCurrency *currency = [[PNCurrency alloc] initWithCentsAmount:100];
+[current doubleAmount] // Value is 1.00
+```
+
 ###### - stringAmount
+
+Returns the amount as a string exactly as you would expect
+
+```objc
+// Initialize currency to a dollar
+PNCurrency *currency = [[PNCurrency alloc] initWithCentsAmount:100];
+NSLog(@"%@", [currency stringAmount]) // prints "1.00"
+```
 
 ##### Formatters
 
@@ -169,7 +194,7 @@ You can check out the full reference documentation
 ### Changelog
 -------------
 
-* *v1.0* Initial release **(4/1/15)**
+* **v1.0** - Initial release *(4/1/15)*
 
 ### Roadmap
 -----------
