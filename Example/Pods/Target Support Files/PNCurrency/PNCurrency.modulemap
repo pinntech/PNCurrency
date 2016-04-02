@@ -1,0 +1,6 @@
+framework module PNCurrency {
+  umbrella header "PNCurrency-umbrella.h"
+
+  export *
+  module * { export * }
+}

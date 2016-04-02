@@ -1,0 +1,14 @@
+PODS:
+  - PNCurrency (0.1.0)
+
+DEPENDENCIES:
+  - PNCurrency (from `../`)
+
+EXTERNAL SOURCES:
+  PNCurrency:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  PNCurrency: 340bf9fb635f6e8479844899f802a6c22cfba4da
+
+COCOAPODS: 0.39.0
