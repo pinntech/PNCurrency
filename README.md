@@ -75,7 +75,7 @@ Here's the quick jist of how to get started using PNCurrency
 Theres a few different ways to instantiate a new PNCurrency object, here they
 are to show you how to best init the object for your usage.
 
-###### `- (id)init`
+###### init
 
 The plain init will default the amount to zero. Just alloc init the object like so:
 
@@ -83,7 +83,7 @@ The plain init will default the amount to zero. Just alloc init the object like 
 PNCurrency *currency = [[PNCurrency alloc] init];
 ```
 
-###### `- (id)initWithCentsAmount`
+###### initWithCentsAmount
 
 To create the object when you have an amount in cents use this:
 
@@ -92,7 +92,7 @@ To create the object when you have an amount in cents use this:
 PNCurrency *currency = [[PNCurrency alloc] initWithCentsAmount:100];
 ```
 
-###### `- (id)initWithDoubleAmount`
+###### initWithDoubleAmount
 
 You might have a raw double, in which case you'll want to use this:
 
@@ -101,7 +101,7 @@ You might have a raw double, in which case you'll want to use this:
 PNCurrency *currency = [[PNCurrency alloc] initWithDoubleAmount:1.00];
 ```
 
-###### `- (id)initWithStringAmount`
+###### initWithStringAmount
 
 Finally if you have a string that represents the amount you can feed that in as well:
 
@@ -116,7 +116,7 @@ Theres a good chance you're going to want to update the currency value to
 something else in the objects lifetime, this can be done easily a few different
 ways
 
-###### `- (NSUInteger)centsAmount`
+###### centsAmount
 
 You can modify the amount by changing the centsAmount property:
 
@@ -125,7 +125,7 @@ PNCurrency *currency = [[PNCurrency alloc] init];
 currency.centsAmount = 10 // value is now $0.10
 ```
 
-###### `- (void)setWithDoubleAmount`
+###### setWithDoubleAmount
 
 Or change it with a new double value:
 
@@ -134,7 +134,7 @@ PNCurrency *currency = [[PNCurrency alloc] init];
 [currency setWithDoubleAmount:1.11] // value is now $1.11
 ```
 
-###### `- (void)setWithStringAmount`
+###### setWithStringAmount
 
 Finally with a  new string value:
 
@@ -148,26 +148,26 @@ PNCurrency *currency = [[PNCurrency alloc] init];
 Nothing fancy here but safe convenient autoconversions, when you need to 
 actually return the value here's what to do
 
-###### `- (NSUInteger)centsAmount`
+###### centsAmount
 
 You can utilize the cents amount property to get the raw amount of cents as an
 unsigned integer
 
 ```objc
 PNCurrency *currency = [[PNCurrency alloc] initWithStringAmount:@"1.00"];
-[current centsAmounts] // Value is 100
+[currency centsAmounts] // Value is 100 (you can also use currency.centsAmount
 ```
 
-###### `- (double)doubleAmount`
+###### doubleAmount
 
 Returns the amount as a double value, may be truncated for trailing zeroes
 
 ```objc
 PNCurrency *currency = [[PNCurrency alloc] initWithCentsAmount:100];
-[current doubleAmount] // Value is 1.00
+[currency doubleAmount] // Value is 1.00
 ```
 
-###### `- (NSString*)stringAmount`
+###### stringAmount
 
 Returns the amount as a string exactly as you would expect
 
@@ -182,7 +182,7 @@ Often you'll want to print this stuff to the screen so chances are you will
 want something like "$1.00" as opposed to a double or amount in cents. These
 are the convenience formatters.
 
-###### `- (NSString*)formattedAmount`
+###### formattedAmount
 
 Simply prints the value formatted with the dollar sign right in front
 
@@ -191,7 +191,7 @@ PNCurrency *currency = [[PNCurrency alloc] initWithCentsAmount:100];
 NSLog(@"%@", [currency formattedAmount]) // prints "$1.00"
 ```
 
-###### `- (NSString*)formattedAmountWithSpace`
+###### formattedAmountWithSpace
 
 Prints the dollar sign in front of the amount but with a space between the $
 and the amount itself
