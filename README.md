@@ -110,7 +110,7 @@ Finally if you have a string that represents the amount you can feed that in as 
 PNCurrency *currency = [[PNCurrency alloc] initWithStringAmount:@"1.00"];
 ```
 
-##### Setters
+#### Setters
 
 Theres a good chance you're going to want to update the currency value to
 something else in the objects lifetime, this can be done easily a few different
@@ -143,7 +143,7 @@ PNCurrency *currency = [[PNCurrency alloc] init];
 [currency setWithStringAmount:@"2.00"] // value is now $2.00
 ```
 
-##### Getters
+#### Getters
 
 Nothing fancy here but safe convenient autoconversions, when you need to 
 actually return the value here's what to do
@@ -176,7 +176,7 @@ PNCurrency *currency = [[PNCurrency alloc] initWithCentsAmount:100];
 NSLog(@"%@", [currency stringAmount]) // prints "1.00"
 ```
 
-##### Formatters
+#### Formatters
 
 Often you'll want to print this stuff to the screen so chances are you will
 want something like "$1.00" as opposed to a double or amount in cents. These
