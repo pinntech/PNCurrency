@@ -38,10 +38,10 @@ PNCurrency is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "PNCurrency"
+pod 'PNCurrency', '~> 1.0'
 ```
 
-Now you can add to your project with
+Now you can use it in your project like so
 
 ```objc
 #import <PNCurrency/PNCurrency.h>
