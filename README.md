@@ -75,7 +75,7 @@ Here's the quick jist of how to get started using PNCurrency
 Theres a few different ways to instantiate a new PNCurrency object, here they
 are to show you how to best init the object for your usage.
 
-###### `- (id)init`
+###### ```objc- (id)init```
 
 The plain init will default the amount to zero. Just alloc init the object like so:
 
