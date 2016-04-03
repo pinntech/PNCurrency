@@ -1,6 +1,13 @@
 ![Alt text](https://raw.githubusercontent.com/pinnrepo/PNCurrency/master/logo.png?raw=true "PNCurrency")
 --------------------------------------------------------------------------------------------------------
 
+[![Version](https://img.shields.io/cocoapods/v/PNCurrency.svg?style=flat)](http://cocoapods.org/pods/PNCurrency)
+[![CI Status](https://travis-ci.org/pinnrepo/PNCurrency.svg?branch=master)](https://travis-ci.org/pinnrepo/PNCurrency)
+[![Doc Coverage](https://img.shields.io/cocoapods/metrics/doc-percent/PNCurrency.svg?style=flat)](http://cocoapods.org/pods/PNCurrency)
+[![License](https://img.shields.io/cocoapods/l/PNCurrency.svg?style=flat)](http://cocoapods.org/pods/PNCurrency)
+[![Platform](https://img.shields.io/cocoapods/p/PNCurrency.svg?style=flat)](http://cocoapods.org/pods/PNCurrency)
+[![Language](https://img.shields.io/badge/language-objective--c-lightgrey.svg)](http://cocoapods.org/pods/PNCurrency)
+
 PNCurrency makes it easy to interchange different currency formats within your
 applicaiton. If you've ever worked with currency in your app before then you
 know how common of a task it is converting between cents, double, strings or
@@ -30,7 +37,7 @@ see how to get started.
 PNCurrency is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
-```
+```ruby
 pod "PNCurrency"
 ```
 
@@ -44,7 +51,7 @@ Now you can add to your project with
 
 You can clone the repo with git:
 
-```
+```shell
 git clone https://github.com/pinnrepo/PNCurrency.git
 ```
 
