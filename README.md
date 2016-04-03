@@ -70,7 +70,7 @@ writing your own:
 
 Here's the quick jist of how to get started using PNCurrency
 
-##### Initialization
+#### Initialization
 
 Theres a few different ways to instantiate a new PNCurrency object, here they
 are to show you how to best init the object for your usage.
