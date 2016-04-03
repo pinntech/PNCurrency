@@ -3,7 +3,7 @@
 
 [![Version](https://img.shields.io/cocoapods/v/PNCurrency.svg?style=flat)](http://cocoapods.org/pods/PNCurrency)
 [![CI Status](https://travis-ci.org/pinnrepo/PNCurrency.svg?branch=master)](https://travis-ci.org/pinnrepo/PNCurrency)
-[![Doc Coverage](https://img.shields.io/cocoapods/metrics/doc-percent/PNCurrency.svg?style=flat)](http://cocoapods.org/pods/PNCurrency)
+[![Doc Coverage](https://img.shields.io/cocoapods/metrics/doc-percent/PNCurrency.svg)](http://cocoapods.org/pods/PNCurrency)
 [![License](https://img.shields.io/cocoapods/l/PNCurrency.svg?style=flat)](http://cocoapods.org/pods/PNCurrency)
 [![Platform](https://img.shields.io/cocoapods/p/PNCurrency.svg?style=flat)](http://cocoapods.org/pods/PNCurrency)
 [![Language](https://img.shields.io/badge/language-objective--c-lightgrey.svg)](http://cocoapods.org/pods/PNCurrency)
