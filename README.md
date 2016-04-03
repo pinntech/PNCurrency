@@ -225,6 +225,7 @@ You can check out the full reference documentation
 Here's a list of features and improvements that are up and coming
 
 * NSCoding and NSCopying compliant
+* Rounding mode property
 * Setters for just dollars portion or cents portion
 
 ### Contributing

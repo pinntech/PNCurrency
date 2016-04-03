@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "PNCurrency"
-  s.version          = "0.1.0"
+  s.version          = "1.0.0"
   s.summary          = "An easy to use US currency format interchange"
 
 # This description is used to generate tags and improve search results.
@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
 
   s.homepage         = "https://github.com/pinnrepo/PNCurrency"
   s.license          = 'MIT'
-  s.author           = { "David Westerhoff" => "dmwesterhoff@gmail.com" }
+  s.author           = { "David Westerhoff" => "david@getpinn.co" }
   s.source           = { :git => "https://github.com/pinnrepo/PNCurrency.git", :tag => s.version.to_s }
 
   s.platform     = :ios, '7.0'
