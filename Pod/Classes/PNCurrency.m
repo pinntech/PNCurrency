@@ -70,7 +70,8 @@
 
 - (double)doubleAmount
 {
-    return self.centsAmount / 100.0f;
+    NSNumber* numberAmount = [currencyFormatter numberFromString:[NSString stringWithFormat:@"%f", (self.centsAmount / 100.0f)]];
+    return [numberAmount doubleValue];
 }
 
 - (NSString*)stringAmount
@@ -79,7 +80,7 @@
     return [NSString stringWithFormat:@"%.02f", doubleAmount];
 }
 
-- (void)setWithDoubleAmount:(NSUInteger)amount
+- (void)setWithDoubleAmount:(double)amount
 {
     NSString* stringAmount = [currencyFormatter stringFromNumber:[NSNumber numberWithDouble:amount]];
     NSNumber* numberAmount = [currencyFormatter numberFromString:stringAmount];

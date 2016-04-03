@@ -94,7 +94,7 @@
  *
  *  @param amount The amount in cents
  */
-- (void)setWithDoubleAmount:(NSUInteger)amount;
+- (void)setWithDoubleAmount:(double)amount;
 
 /**
  *  Sets a new value on an already instantiated PNCurrency object with a double
