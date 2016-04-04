@@ -1,25 +1,20 @@
 {
   "name": "PNCurrency",
-  "version": "0.1.0",
-  "summary": "A short description of PNCurrency.",
-  "description": "",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/PNCurrency",
+  "version": "1.1.0",
+  "summary": "An easy to use US currency format interchange model",
+  "description": "PNCurrency is a US currency class that wraps all the conversions from\ndifferent types and will shorted up any code that deals with US currency.\nThe interface is simple, short and easy to get started.",
+  "homepage": "https://github.com/pinnrepo/PNCurrency",
   "license": "MIT",
   "authors": {
-    "David Westerhoff": "dmwesterhoff@gmail.com"
+    "David Westerhoff": "david@getpinn.co"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/PNCurrency.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/pinnrepo/PNCurrency.git",
+    "tag": "1.1.0"
   },
   "platforms": {
     "ios": "7.0"
   },
   "requires_arc": true,
-  "source_files": "Pod/Classes/**/*",
-  "resource_bundles": {
-    "PNCurrency": [
-      "Pod/Assets/*.png"
-    ]
-  }
+  "source_files": "PNCurrency/*"
 }

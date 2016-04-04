@@ -1,1 +1,1 @@
-../../../../../Pod/Classes/PNCurrency.h
+../../../../../PNCurrency/PNCurrency.h

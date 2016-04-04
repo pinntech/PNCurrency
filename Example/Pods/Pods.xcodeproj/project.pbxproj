@@ -7,17 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B8DB06BC5DFA922CB4DE87523AE9ADE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		0477E670BD7417D8E7F1C79E751D2762 /* PNCurrencyTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 133E571963B145E46FF95F29A46D5797 /* PNCurrencyTextField.m */; };
 		0E225719167607449FEEE0C9E3A1BE46 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 		1CD32F10C6B3B648C59D6ADD042CFB48 /* Pods-PNCurrency_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CCCA12DD8640B3B03208D5C00DFBC8E2 /* Pods-PNCurrency_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		273222A91CB335C3009D3E73 /* PNCurrency.h in Headers */ = {isa = PBXBuildFile; fileRef = 273222A51CB335C3009D3E73 /* PNCurrency.h */; };
-		273222AA1CB335C3009D3E73 /* PNCurrency.m in Sources */ = {isa = PBXBuildFile; fileRef = 273222A61CB335C3009D3E73 /* PNCurrency.m */; };
-		273222AB1CB335C3009D3E73 /* PNCurrencyTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 273222A71CB335C3009D3E73 /* PNCurrencyTextField.h */; };
-		273222AC1CB335C3009D3E73 /* PNCurrencyTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 273222A81CB335C3009D3E73 /* PNCurrencyTextField.m */; };
+		21DC9CA30508F49C5DBB8BE859638E5D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		2BA5CB266D447C6B6C75C8CAD0AE4DF3 /* PNCurrency.h in Headers */ = {isa = PBXBuildFile; fileRef = B250DE44AB9B54FF726248BAE85832B6 /* PNCurrency.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		67BD132903A13CEB4A1DCA74EFBD83FF /* Pods-PNCurrency_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 283FC248B7B918E6182FCA6E6A94B63B /* Pods-PNCurrency_Tests-dummy.m */; };
-		82808B32968A1564B81096C402C4E9BF /* PNCurrency-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 520439FB365E3220AFED12994A317226 /* PNCurrency-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C2B470BC51F4830538B77DD0C45E0EE4 /* PNCurrency-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E1C7D7BD5D910D6C1F3EDED0131402CF /* PNCurrency-dummy.m */; };
-		DE4C186436E891645392BCE9BFD1AA4B /* PNCurrency.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 157B0287E3E3436A01FFEDCC82B8E27F /* PNCurrency.bundle */; };
+		774839346F7FA4D19A7848760A3E13D3 /* PNCurrency-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D8736EC85FEF5C62A2B35482AF511A /* PNCurrency-dummy.m */; };
+		83DCD3BBB84362A8523E316484B83C14 /* PNCurrency.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCB1CA0C3B9D1A912D2853DDD3DB1A0 /* PNCurrency.m */; };
+		DBA32B437B556FEFDD82A04299FC4549 /* PNCurrencyTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 464838D3EC2FD04DCF23F6A8B83D1066 /* PNCurrencyTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ECFC9D5961F21CEE33A0EC495ADDF068 /* PNCurrency-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A48B33DBB076A7E918450EC0309B9A5F /* PNCurrency-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,43 +24,35 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9692DD2F623A490688BF14C7832A1FD5;
+			remoteGlobalIDString = B6CC10972A92761A396686A1E62F150D;
 			remoteInfo = PNCurrency;
-		};
-		B16DA7453D63B8CFEBB7D5FF3A5EBD6E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 84870E72520AE6F07232085218856DAE;
-			remoteInfo = "PNCurrency-PNCurrency";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0234504C95E5F748F8421324110907B3 /* PNCurrency-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PNCurrency-prefix.pch"; sourceTree = "<group>"; };
-		063F2056533FD81BDEB26323A67F3B68 /* PNCurrency.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PNCurrency.xcconfig; sourceTree = "<group>"; };
 		06BB4B67126839FD3DD20C78F9E75716 /* Pods-PNCurrency_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PNCurrency_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		157B0287E3E3436A01FFEDCC82B8E27F /* PNCurrency.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PNCurrency.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		133E571963B145E46FF95F29A46D5797 /* PNCurrencyTextField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PNCurrencyTextField.m; sourceTree = "<group>"; };
+		1E062238E799180EE4D9B0D044A365D0 /* Pods_PNCurrency_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PNCurrency_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EE61828D217DE254EB035428F8851CF /* Pods-PNCurrency_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PNCurrency_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		273222A51CB335C3009D3E73 /* PNCurrency.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PNCurrency.h; path = PNCurrency/PNCurrency.h; sourceTree = "<group>"; };
-		273222A61CB335C3009D3E73 /* PNCurrency.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PNCurrency.m; path = PNCurrency/PNCurrency.m; sourceTree = "<group>"; };
-		273222A71CB335C3009D3E73 /* PNCurrencyTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PNCurrencyTextField.h; path = PNCurrency/PNCurrencyTextField.h; sourceTree = "<group>"; };
-		273222A81CB335C3009D3E73 /* PNCurrencyTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PNCurrencyTextField.m; path = PNCurrency/PNCurrencyTextField.m; sourceTree = "<group>"; };
 		283FC248B7B918E6182FCA6E6A94B63B /* Pods-PNCurrency_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PNCurrency_Tests-dummy.m"; sourceTree = "<group>"; };
-		2E37F651DB15610FB5FFBCA543B9A843 /* PNCurrency.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = PNCurrency.modulemap; sourceTree = "<group>"; };
+		3C98CC163341F112FB98EDA58A8DEA7E /* PNCurrency.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = PNCurrency.modulemap; sourceTree = "<group>"; };
 		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		520439FB365E3220AFED12994A317226 /* PNCurrency-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PNCurrency-umbrella.h"; sourceTree = "<group>"; };
-		6D0692E56D6A054A64C12182F35E4492 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		464838D3EC2FD04DCF23F6A8B83D1066 /* PNCurrencyTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PNCurrencyTextField.h; sourceTree = "<group>"; };
+		5FCB1CA0C3B9D1A912D2853DDD3DB1A0 /* PNCurrency.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PNCurrency.m; sourceTree = "<group>"; };
 		7757CEAD9C618E2BBDE9E90DD8D1BB21 /* Pods-PNCurrency_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PNCurrency_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		A00E53E4EEF3E3712D14652953F266BF /* PNCurrency.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PNCurrency.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC7B2DBCB0A8F246D21D2AF840877324 /* Pods_PNCurrency_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PNCurrency_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BB201737CE5ECE3D92069D08BFA35C4 /* PNCurrency.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PNCurrency.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A48B33DBB076A7E918450EC0309B9A5F /* PNCurrency-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PNCurrency-umbrella.h"; sourceTree = "<group>"; };
+		B250DE44AB9B54FF726248BAE85832B6 /* PNCurrency.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PNCurrency.h; sourceTree = "<group>"; };
 		B404B578012BF080BA5E0A4601D69919 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6D8736EC85FEF5C62A2B35482AF511A /* PNCurrency-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PNCurrency-dummy.m"; sourceTree = "<group>"; };
+		B8F6907F39116C32C989137462C2FCF7 /* PNCurrency-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PNCurrency-prefix.pch"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BD90985F5CD15AE33AB72AC64EB1A495 /* Pods-PNCurrency_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PNCurrency_Tests-resources.sh"; sourceTree = "<group>"; };
 		CCCA12DD8640B3B03208D5C00DFBC8E2 /* Pods-PNCurrency_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PNCurrency_Tests-umbrella.h"; sourceTree = "<group>"; };
-		E1C7D7BD5D910D6C1F3EDED0131402CF /* PNCurrency-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PNCurrency-dummy.m"; sourceTree = "<group>"; };
+		D0A3955DE176A7288C61B8E3879CF820 /* PNCurrency.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PNCurrency.xcconfig; sourceTree = "<group>"; };
 		E2575FCEAA0CEB88FDD4526CAF3E24DC /* Pods-PNCurrency_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PNCurrency_Tests.modulemap"; sourceTree = "<group>"; };
 		ED325A508F4B167BFDABA3C105E36B82 /* Pods-PNCurrency_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PNCurrency_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		F530DE913D7C4356BD18439E978D8A7A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE26709084569B5BFC52380DA9596BDC /* Pods-PNCurrency_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PNCurrency_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,43 +65,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3988B2F984FA9F57694DC879AA9FAAA0 /* Frameworks */ = {
+		53F8344106F68CECE77B575627879159 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6D55416AF8D5FA7C478DAFDC3D83C1B3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0B8DB06BC5DFA922CB4DE87523AE9ADE /* Foundation.framework in Frameworks */,
+				21DC9CA30508F49C5DBB8BE859638E5D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0B32F84E5432C484269523383AE41F34 /* Classes */ = {
+		29FF8A373A3EB31539A09632BFF2A98F /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				8BB201737CE5ECE3D92069D08BFA35C4 /* PNCurrency.framework */,
+				1E062238E799180EE4D9B0D044A365D0 /* Pods_PNCurrency_Tests.framework */,
 			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		1AE15AA86DC28AF52702ABF460183E48 /* PNCurrency */ = {
-			isa = PBXGroup;
-			children = (
-				273222A51CB335C3009D3E73 /* PNCurrency.h */,
-				273222A61CB335C3009D3E73 /* PNCurrency.m */,
-				273222A71CB335C3009D3E73 /* PNCurrencyTextField.h */,
-				273222A81CB335C3009D3E73 /* PNCurrencyTextField.m */,
-				732E730F25D4BBA4D118EC643FAD4E62 /* Pod */,
-				5E86618734453C218F59D26D8B3F02C9 /* Support Files */,
-			);
-			name = PNCurrency;
-			path = ../..;
+			name = Products;
 			sourceTree = "<group>";
 		};
 		30F85629B66C978626EA07256B93500A /* Pods-PNCurrency_Tests */ = {
@@ -131,26 +103,14 @@
 			path = "Target Support Files/Pods-PNCurrency_Tests";
 			sourceTree = "<group>";
 		};
-		5E86618734453C218F59D26D8B3F02C9 /* Support Files */ = {
+		3E8C69E024201C8D5A9CA52775201685 /* PNCurrency */ = {
 			isa = PBXGroup;
 			children = (
-				6D0692E56D6A054A64C12182F35E4492 /* Info.plist */,
-				2E37F651DB15610FB5FFBCA543B9A843 /* PNCurrency.modulemap */,
-				063F2056533FD81BDEB26323A67F3B68 /* PNCurrency.xcconfig */,
-				E1C7D7BD5D910D6C1F3EDED0131402CF /* PNCurrency-dummy.m */,
-				0234504C95E5F748F8421324110907B3 /* PNCurrency-prefix.pch */,
-				520439FB365E3220AFED12994A317226 /* PNCurrency-umbrella.h */,
+				FB053BABE29AEC094EEDA16F614CB95A /* PNCurrency */,
+				DC5647B63EE65665CBDC883737579A63 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/PNCurrency";
-			sourceTree = "<group>";
-		};
-		732E730F25D4BBA4D118EC643FAD4E62 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				0B32F84E5432C484269523383AE41F34 /* Classes */,
-			);
-			path = Pod;
+			name = PNCurrency;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -159,19 +119,9 @@
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
 				DF214A6E0DBE637D973EEE13135AFE8F /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				7E0E326BA5832A39A664E2AC90701330 /* Products */,
+				29FF8A373A3EB31539A09632BFF2A98F /* Products */,
 				860913388C25E2DA05B50F1BCAE7E6AD /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		7E0E326BA5832A39A664E2AC90701330 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				157B0287E3E3436A01FFEDCC82B8E27F /* PNCurrency.bundle */,
-				A00E53E4EEF3E3712D14652953F266BF /* PNCurrency.framework */,
-				AC7B2DBCB0A8F246D21D2AF840877324 /* Pods_PNCurrency_Tests.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		860913388C25E2DA05B50F1BCAE7E6AD /* Targets Support Files */ = {
@@ -198,12 +148,37 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		DC5647B63EE65665CBDC883737579A63 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F530DE913D7C4356BD18439E978D8A7A /* Info.plist */,
+				3C98CC163341F112FB98EDA58A8DEA7E /* PNCurrency.modulemap */,
+				D0A3955DE176A7288C61B8E3879CF820 /* PNCurrency.xcconfig */,
+				B6D8736EC85FEF5C62A2B35482AF511A /* PNCurrency-dummy.m */,
+				B8F6907F39116C32C989137462C2FCF7 /* PNCurrency-prefix.pch */,
+				A48B33DBB076A7E918450EC0309B9A5F /* PNCurrency-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/PNCurrency";
+			sourceTree = "<group>";
+		};
 		DF214A6E0DBE637D973EEE13135AFE8F /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1AE15AA86DC28AF52702ABF460183E48 /* PNCurrency */,
+				3E8C69E024201C8D5A9CA52775201685 /* PNCurrency */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		FB053BABE29AEC094EEDA16F614CB95A /* PNCurrency */ = {
+			isa = PBXGroup;
+			children = (
+				B250DE44AB9B54FF726248BAE85832B6 /* PNCurrency.h */,
+				5FCB1CA0C3B9D1A912D2853DDD3DB1A0 /* PNCurrency.m */,
+				464838D3EC2FD04DCF23F6A8B83D1066 /* PNCurrencyTextField.h */,
+				133E571963B145E46FF95F29A46D5797 /* PNCurrencyTextField.m */,
+			);
+			path = PNCurrency;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,36 +192,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8CCA9F30250D32C69FA2BB9C0CFA06FE /* Headers */ = {
+		F51760F82A2198ECCAE5A2345A96381D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				273222AB1CB335C3009D3E73 /* PNCurrencyTextField.h in Headers */,
-				82808B32968A1564B81096C402C4E9BF /* PNCurrency-umbrella.h in Headers */,
-				273222A91CB335C3009D3E73 /* PNCurrency.h in Headers */,
+				ECFC9D5961F21CEE33A0EC495ADDF068 /* PNCurrency-umbrella.h in Headers */,
+				2BA5CB266D447C6B6C75C8CAD0AE4DF3 /* PNCurrency.h in Headers */,
+				DBA32B437B556FEFDD82A04299FC4549 /* PNCurrencyTextField.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		84870E72520AE6F07232085218856DAE /* PNCurrency-PNCurrency */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 77F3DC81615542DACD1BE46186DBC4E6 /* Build configuration list for PBXNativeTarget "PNCurrency-PNCurrency" */;
-			buildPhases = (
-				E0CD9CAF776C801AADD31EFC8100E5AF /* Sources */,
-				3988B2F984FA9F57694DC879AA9FAAA0 /* Frameworks */,
-				AEE45D4AFCFF1055EC7D0C548222B2D5 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "PNCurrency-PNCurrency";
-			productName = "PNCurrency-PNCurrency";
-			productReference = 157B0287E3E3436A01FFEDCC82B8E27F /* PNCurrency.bundle */;
-			productType = "com.apple.product-type.bundle";
-		};
 		8A4886D353A0BDB8157E98F98227EF2E /* Pods-PNCurrency_Tests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B06EFC4DF548E364A82C4EAF3039EA /* Build configuration list for PBXNativeTarget "Pods-PNCurrency_Tests" */;
@@ -262,26 +220,24 @@
 			);
 			name = "Pods-PNCurrency_Tests";
 			productName = "Pods-PNCurrency_Tests";
-			productReference = AC7B2DBCB0A8F246D21D2AF840877324 /* Pods_PNCurrency_Tests.framework */;
+			productReference = 1E062238E799180EE4D9B0D044A365D0 /* Pods_PNCurrency_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		9692DD2F623A490688BF14C7832A1FD5 /* PNCurrency */ = {
+		B6CC10972A92761A396686A1E62F150D /* PNCurrency */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 708B856519A80DB241CBFD1F711BF7B8 /* Build configuration list for PBXNativeTarget "PNCurrency" */;
+			buildConfigurationList = 1833618FA0EE669BC71C7A692DA91452 /* Build configuration list for PBXNativeTarget "PNCurrency" */;
 			buildPhases = (
-				20D0A3F43047AC45E9642B70F1F588B6 /* Sources */,
-				6D55416AF8D5FA7C478DAFDC3D83C1B3 /* Frameworks */,
-				99F9EEA01FCF88F40A270EBB65C49A4F /* Resources */,
-				8CCA9F30250D32C69FA2BB9C0CFA06FE /* Headers */,
+				363784278D15DB6D98CF800F4ABE9D39 /* Sources */,
+				53F8344106F68CECE77B575627879159 /* Frameworks */,
+				F51760F82A2198ECCAE5A2345A96381D /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B33F48BE8EA46F9193E26EB88DFAF690 /* PBXTargetDependency */,
 			);
 			name = PNCurrency;
 			productName = PNCurrency;
-			productReference = A00E53E4EEF3E3712D14652953F266BF /* PNCurrency.framework */;
+			productReference = 8BB201737CE5ECE3D92069D08BFA35C4 /* PNCurrency.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -301,34 +257,15 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 7E0E326BA5832A39A664E2AC90701330 /* Products */;
+			productRefGroup = 29FF8A373A3EB31539A09632BFF2A98F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9692DD2F623A490688BF14C7832A1FD5 /* PNCurrency */,
-				84870E72520AE6F07232085218856DAE /* PNCurrency-PNCurrency */,
+				B6CC10972A92761A396686A1E62F150D /* PNCurrency */,
 				8A4886D353A0BDB8157E98F98227EF2E /* Pods-PNCurrency_Tests */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		99F9EEA01FCF88F40A270EBB65C49A4F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DE4C186436E891645392BCE9BFD1AA4B /* PNCurrency.bundle in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AEE45D4AFCFF1055EC7D0C548222B2D5 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		049D95BB634DE10C700134C60E109EDC /* Sources */ = {
@@ -339,36 +276,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		20D0A3F43047AC45E9642B70F1F588B6 /* Sources */ = {
+		363784278D15DB6D98CF800F4ABE9D39 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				273222AC1CB335C3009D3E73 /* PNCurrencyTextField.m in Sources */,
-				273222AA1CB335C3009D3E73 /* PNCurrency.m in Sources */,
-				C2B470BC51F4830538B77DD0C45E0EE4 /* PNCurrency-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E0CD9CAF776C801AADD31EFC8100E5AF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				774839346F7FA4D19A7848760A3E13D3 /* PNCurrency-dummy.m in Sources */,
+				83DCD3BBB84362A8523E316484B83C14 /* PNCurrency.m in Sources */,
+				0477E670BD7417D8E7F1C79E751D2762 /* PNCurrencyTextField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		B33F48BE8EA46F9193E26EB88DFAF690 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "PNCurrency-PNCurrency";
-			target = 84870E72520AE6F07232085218856DAE /* PNCurrency-PNCurrency */;
-			targetProxy = B16DA7453D63B8CFEBB7D5FF3A5EBD6E /* PBXContainerItemProxy */;
-		};
 		F3273C2078DA09C36585D17DA06B21A0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = PNCurrency;
-			target = 9692DD2F623A490688BF14C7832A1FD5 /* PNCurrency */;
+			target = B6CC10972A92761A396686A1E62F150D /* PNCurrency */;
 			targetProxy = A2885F39AD9B102C9C67D5DC3B2E3918 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -447,72 +371,6 @@
 			};
 			name = Debug;
 		};
-		25A7E3FD0BC92DEB3FA9D113FA71FE34 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 063F2056533FD81BDEB26323A67F3B68 /* PNCurrency.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/PNCurrency/PNCurrency-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PNCurrency/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/PNCurrency/PNCurrency.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = PNCurrency;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		5BE23423970308361BCE6BF1649D4DE5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 063F2056533FD81BDEB26323A67F3B68 /* PNCurrency.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/PNCurrency/PNCurrency-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PNCurrency/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/PNCurrency/PNCurrency.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = PNCurrency;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		649C23E127A70583330228B77A3B5683 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 063F2056533FD81BDEB26323A67F3B68 /* PNCurrency.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = PNCurrency;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
 		B50C3DB33F924BF70F07ACDA7069A39F /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7757CEAD9C618E2BBDE9E90DD8D1BB21 /* Pods-PNCurrency_Tests.release.xcconfig */;
@@ -543,15 +401,57 @@
 			};
 			name = Release;
 		};
-		DC1F7F4FD5FC89A05B285BC6C2A98D10 /* Debug */ = {
+		C83FDC3B963FCA93FD8E4BFB25B2CB11 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 063F2056533FD81BDEB26323A67F3B68 /* PNCurrency.xcconfig */;
+			baseConfigurationReference = D0A3955DE176A7288C61B8E3879CF820 /* PNCurrency.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PNCurrency/PNCurrency-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PNCurrency/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PNCurrency/PNCurrency.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = PNCurrency;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DB383C6F187EC1F5FCCF6B014CACE439 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0A3955DE176A7288C61B8E3879CF820 /* PNCurrency.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PNCurrency/PNCurrency-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PNCurrency/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PNCurrency/PNCurrency.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = PNCurrency;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
@@ -597,29 +497,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		1833618FA0EE669BC71C7A692DA91452 /* Build configuration list for PBXNativeTarget "PNCurrency" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB383C6F187EC1F5FCCF6B014CACE439 /* Debug */,
+				C83FDC3B963FCA93FD8E4BFB25B2CB11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0B57334D6C23DADAA4F7D802A5760EB2 /* Debug */,
 				03CA91998D6773EC5D02B3DB87B8353E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		708B856519A80DB241CBFD1F711BF7B8 /* Build configuration list for PBXNativeTarget "PNCurrency" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				25A7E3FD0BC92DEB3FA9D113FA71FE34 /* Debug */,
-				5BE23423970308361BCE6BF1649D4DE5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		77F3DC81615542DACD1BE46186DBC4E6 /* Build configuration list for PBXNativeTarget "PNCurrency-PNCurrency" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DC1F7F4FD5FC89A05B285BC6C2A98D10 /* Debug */,
-				649C23E127A70583330228B77A3B5683 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
