@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "PNCurrency"
-  s.version          = "1.0.3"
+  s.version          = "1.1.0"
   s.summary          = "An easy to use US currency format interchange model"
 
   s.description      = <<-DESC
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '7.0'
   s.requires_arc = true
 
-  s.source_files = 'Pod/Classes/**/*'
+  s.source_files = 'PNCurrency/*'
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

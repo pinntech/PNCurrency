@@ -218,6 +218,7 @@ You can check out the full reference documentation
 -------------
 
 * **v1.0** - Initial release *(4/1/15)*
+* **v1.1** - Added PNCurrencyTextField *(4/4/15)*
 
 ### Roadmap
 -----------
