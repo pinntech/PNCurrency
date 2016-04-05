@@ -23,6 +23,7 @@
 
 @interface PNCurrency ()
 @property (nonatomic, strong) NSNumberFormatter* currencyFormatter;
+@property (nonatomic, strong) NSDecimalNumberHandler* decimalNumberHandler;
 @end
 
 @implementation PNCurrency
@@ -73,7 +74,8 @@
 
 - (NSUInteger)centsAmount
 {
-    NSDecimalNumber* centsDecimalAmount = [self.amount decimalNumberByMultiplyingBy:[[NSDecimalNumber alloc] initWithUnsignedInteger:100]];
+    NSDecimalNumber* centsDecimalAmount = [self.amount decimalNumberByMultiplyingByPowerOf10:2
+                                                                                withBehavior:self.decimalNumberHandler];
     return [centsDecimalAmount unsignedIntegerValue];
 }
 
@@ -107,6 +109,13 @@
     [self.currencyFormatter setCurrencyCode:@"USD"];
     [self.currencyFormatter setRoundingMode:NSNumberFormatterRoundUp];
     [self.currencyFormatter setMaximumFractionDigits:2];
+    self.decimalNumberHandler = [NSDecimalNumberHandler
+        decimalNumberHandlerWithRoundingMode:NSRoundBankers
+                                       scale:2
+                            raiseOnExactness:YES
+                             raiseOnOverflow:YES
+                            raiseOnUnderflow:YES
+                         raiseOnDivideByZero:YES];
 }
 
 @end
