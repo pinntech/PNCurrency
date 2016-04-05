@@ -21,16 +21,18 @@
 
 #import "PNCurrency.h"
 
-@implementation PNCurrency {
-    NSNumberFormatter* currencyFormatter;
-}
+@interface PNCurrency ()
+@property (nonatomic, strong) NSNumberFormatter* currencyFormatter;
+@end
+
+@implementation PNCurrency
 
 - (instancetype)init
 {
     self = [super init];
     if (self) {
         [self initializeFormatter];
-        self.centsAmount = 0;
+        self.amount = [[NSDecimalNumber alloc] initWithUnsignedInteger:0];
     }
     return self;
 }
@@ -40,7 +42,8 @@
     self = [super init];
     if (self) {
         [self initializeFormatter];
-        self.centsAmount = centsAmount;
+        self.amount = [[NSDecimalNumber alloc] initWithUnsignedInteger:centsAmount];
+        self.amount = [self.amount decimalNumberByDividingBy:[[NSDecimalNumber alloc] initWithDouble:100.0]];
     }
     return self;
 }
@@ -50,9 +53,7 @@
     self = [super init];
     if (self) {
         [self initializeFormatter];
-        NSString* stringAmount = [currencyFormatter stringFromNumber:[NSNumber numberWithDouble:doubleAmount]];
-        NSNumber* numberAmount = [currencyFormatter numberFromString:stringAmount];
-        self.centsAmount = (NSUInteger)([numberAmount doubleValue] * 100);
+        self.amount = [[NSDecimalNumber alloc] initWithDouble:doubleAmount];
     }
     return self;
 }
@@ -62,56 +63,50 @@
     self = [super init];
     if (self) {
         [self initializeFormatter];
-        NSNumber* numberAmount = [currencyFormatter numberFromString:stringAmount];
-        self.centsAmount = (NSUInteger)([numberAmount doubleValue] * 100);
+        NSString* safeStringAmount = [stringAmount stringByReplacingOccurrencesOfString:@"$" withString:@""];
+        safeStringAmount = [safeStringAmount stringByReplacingOccurrencesOfString:@"," withString:@""];
+        safeStringAmount = [safeStringAmount stringByReplacingOccurrencesOfString:@" " withString:@""];
+        self.amount = [[NSDecimalNumber alloc] initWithString:safeStringAmount];
     }
     return self;
 }
 
+- (NSUInteger)centsAmount
+{
+    NSDecimalNumber* centsDecimalAmount = [self.amount decimalNumberByMultiplyingBy:[[NSDecimalNumber alloc] initWithUnsignedInteger:100]];
+    return [centsDecimalAmount unsignedIntegerValue];
+}
+
 - (double)doubleAmount
 {
-    NSNumber* numberAmount = [currencyFormatter numberFromString:[NSString stringWithFormat:@"%f", (self.centsAmount / 100.0f)]];
-    return [numberAmount doubleValue];
+    return [self.amount doubleValue];
 }
 
 - (NSString*)stringAmount
 {
-    double doubleAmount = self.centsAmount / 100.0f;
-    return [NSString stringWithFormat:@"%.02f", doubleAmount];
-}
-
-- (void)setWithDoubleAmount:(double)amount
-{
-    NSString* stringAmount = [currencyFormatter stringFromNumber:[NSNumber numberWithDouble:amount]];
-    NSNumber* numberAmount = [currencyFormatter numberFromString:stringAmount];
-    self.centsAmount = (NSUInteger)([numberAmount doubleValue] * 100);
-}
-
-- (void)setWithStringAmount:(NSString*)amount
-{
-    NSNumber* numberAmount = [currencyFormatter numberFromString:amount];
-    self.centsAmount = (NSUInteger)([numberAmount doubleValue] * 100);
+    NSString* stringAmount = [self.currencyFormatter stringFromNumber:self.amount];
+    NSString* amountWithoutDollarSign = [stringAmount stringByReplacingOccurrencesOfString:@"$" withString:@""];
+    return amountWithoutDollarSign;
 }
 
 - (NSString*)formattedAmount
 {
-    double doubleAmount = self.centsAmount / 100.0f;
-    return [NSString stringWithFormat:@"$%.02f", doubleAmount];
+    return [NSString stringWithFormat:@"$%@", [self stringAmount]];
 }
 
 - (NSString*)formattedAmountWithSpace
 {
-    double doubleAmount = self.centsAmount / 100.0f;
-    return [NSString stringWithFormat:@"$ %.02f", doubleAmount];
+    return [NSString stringWithFormat:@"$ %@", [self stringAmount]];
 }
 
 #pragma mark - Private Methods
 - (void)initializeFormatter
 {
-    currencyFormatter = [[NSNumberFormatter alloc] init];
-    [currencyFormatter setNumberStyle:NSNumberFormatterDecimalStyle];
-    [currencyFormatter setRoundingMode:NSNumberFormatterRoundUp];
-    [currencyFormatter setMaximumFractionDigits:2];
+    self.currencyFormatter = [[NSNumberFormatter alloc] init];
+    [self.currencyFormatter setNumberStyle:NSNumberFormatterCurrencyStyle];
+    [self.currencyFormatter setCurrencyCode:@"USD"];
+    [self.currencyFormatter setRoundingMode:NSNumberFormatterRoundUp];
+    [self.currencyFormatter setMaximumFractionDigits:2];
 }
 
 @end

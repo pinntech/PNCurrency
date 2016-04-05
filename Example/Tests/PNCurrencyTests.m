@@ -23,9 +23,9 @@
 #import <PNCurrency/PNCurrency.h>
 
 /* Testing Constants */
-NSUInteger const testCentsAmount = 123;
-double const testDoubleAmount = 1.23;
-NSString* const testStringAmount = @"1.23";
+NSUInteger const testCentsAmount = 123456;
+double const testDoubleAmount = 1234.56;
+NSString* const testStringAmount = @"1,234.56";
 
 @interface PNCurrencyTests : XCTestCase
 
@@ -81,22 +81,6 @@ NSString* const testStringAmount = @"1.23";
 {
     PNCurrency* currency = [[PNCurrency alloc] initWithCentsAmount:testCentsAmount];
     XCTAssert([[currency stringAmount] isEqualToString:testStringAmount]);
-}
-
-#pragma mark - Setters
-- (void)testSetWithDoubleAmountShouldSetCorrectAmount
-{
-    PNCurrency* currency = [[PNCurrency alloc] init];
-    NSLog(@"%lu", currency.centsAmount);
-    [currency setWithDoubleAmount:testDoubleAmount];
-    XCTAssert(currency.centsAmount == testCentsAmount);
-}
-
-- (void)testSetWithStringAmountShouldSetCorrectAmount
-{
-    PNCurrency* currency = [[PNCurrency alloc] init];
-    [currency setWithStringAmount:testStringAmount];
-    XCTAssert(currency.centsAmount == testCentsAmount);
 }
 
 #pragma mark - Formatters

@@ -50,7 +50,6 @@
 - (void)initialize
 {
     [super setDelegate:self];
-    [self initializeFormatter];
     self.keyboardType = UIKeyboardTypeDecimalPad;
     NSCharacterSet* legalCharacters = [NSCharacterSet characterSetWithCharactersInString:@".1234567890"];
     self.illegalCharacterSet = [legalCharacters invertedSet];
@@ -63,8 +62,7 @@
 
 - (PNCurrency*)amount
 {
-    PNCurrency* currency = [[PNCurrency alloc] initWithStringAmount:self.text];
-    return currency;
+    return [[PNCurrency alloc] initWithStringAmount:self.text];
 }
 
 #pragma mark - UITextField Delegate Methods
@@ -141,10 +139,9 @@
         }
     }
 
-    // Final pass on the formatter
-    //    NSNumber* numberValue = [self.currencyFormatter numberFromString:[NSString stringWithFormat:@"%@", self.text]];
-    //    NSString* formattedString = [self.currencyFormatter stringFromNumber:numberValue];
-    //    self.text = [formattedString stringByReplacingOccurrencesOfString:@"$" withString:@"" options:NSLiteralSearch range:NSMakeRange(0, 1)];
+    // Format with commas
+    PNCurrency* amount = [[PNCurrency alloc] initWithStringAmount:self.text];
+    self.text = [amount stringAmount];
 
     // Handle for max values
 
@@ -172,15 +169,6 @@
         return self.textFieldDelegate;
     }
     return [super forwardingTargetForSelector:aSelector];
-}
-
-#pragma mark - Private Methods
-- (void)initializeFormatter
-{
-    self.currencyFormatter = [[NSNumberFormatter alloc] init];
-    [self.currencyFormatter setNumberStyle:NSNumberFormatterDecimalStyle];
-    [self.currencyFormatter setRoundingMode:NSNumberFormatterRoundUp];
-    [self.currencyFormatter setMaximumFractionDigits:2];
 }
 
 @end

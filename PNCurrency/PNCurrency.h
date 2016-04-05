@@ -31,9 +31,10 @@
 
 /**
  *  The interanl storage for the object, provides a consistent safe way to hold
- *  the amount in and convert to other styles
+ *  the amount in and convert to other styles, and provides enough precision
+ *  to prevent ever dealing with any rounding errors
  */
-@property (nonatomic, assign) NSUInteger centsAmount;
+@property (nonatomic, strong) NSDecimalNumber* amount;
 
 /**
  *  Initializes a new PNCurrency object set to $0.00
@@ -67,11 +68,18 @@
  *  all extra digits will round to the nearest cents value may be inferred
  *  if not provided.
  *
- *  @param doubleAmount The amount as a string
+ *  @param stringAmount The amount as a string
  *
  *  @return A newly created PNCurrency object
  */
 - (instancetype)initWithStringAmount:(NSString*)stringAmount;
+
+/**
+ *  The amount as an unsigned integer that represents the number of cents
+ *
+ *  @return The amount of cents as an unsigned integer
+ */
+- (NSUInteger)centsAmount;
 
 /**
  *  The amount as a double, with finite precision to the cents position y.xx
@@ -88,25 +96,8 @@
 - (NSString*)stringAmount;
 
 /**
- *  Sets a new value on an already instantiated PNCurrency object with a double
- *  amount all extra digits will round to the nearest cents value may be inferred
- *  if not provided.
- *
- *  @param amount The amount in cents
- */
-- (void)setWithDoubleAmount:(double)amount;
-
-/**
- *  Sets a new value on an already instantiated PNCurrency object with a double
- *  amount all extra digits will round to the nearest cents value may be inferred
- *  if not provided.
- *
- *  @param amount The amount in cents
- */
-- (void)setWithStringAmount:(NSString*)amount;
-
-/**
- *  The amount in pretty formatting with dollar sign, for example "$3.12"
+ *  The amount in pretty formatting with dollar sign, for example "$3.12" also
+ *  will include commas wherever they are syntactically correct
  *
  *  @return The pretty formatted string
  */
@@ -114,7 +105,8 @@
 
 /**
  *  The amount in pretty formatting with dollar sign, with a space between
- *  the dollar sign and amount itself, for example "$ 3.12"
+ *  the dollar sign and amount itself, for example "$ 3.12" also
+ *  will include commas wherever they are syntactically correct
  *
  *  @return The pretty formatted string
  */
