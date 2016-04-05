@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "PNCurrency"
-  s.version          = "1.1.1"
+  s.version          = "1.1.2"
   s.summary          = "An easy to use US currency format interchange model"
 
   s.description      = <<-DESC
