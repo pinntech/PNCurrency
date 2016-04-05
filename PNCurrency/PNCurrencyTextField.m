@@ -56,6 +56,11 @@
     self.illegalCharacterSet = [legalCharacters invertedSet];
 }
 
+- (void)setDelegate:(id<UITextFieldDelegate>)delegate
+{
+    self.textFieldDelegate = delegate;
+}
+
 - (PNCurrency*)amount
 {
     PNCurrency* currency = [[PNCurrency alloc] initWithStringAmount:self.text];
@@ -137,9 +142,9 @@
     }
 
     // Final pass on the formatter
-    NSNumber* numberValue = [self.currencyFormatter numberFromString:[NSString stringWithFormat:@"%@", self.text]];
-    NSString* formattedString = [self.currencyFormatter stringFromNumber:numberValue];
-    self.text = [formattedString stringByReplacingOccurrencesOfString:@"$" withString:@"" options:NSLiteralSearch range:NSMakeRange(0, 1)];
+    //    NSNumber* numberValue = [self.currencyFormatter numberFromString:[NSString stringWithFormat:@"%@", self.text]];
+    //    NSString* formattedString = [self.currencyFormatter stringFromNumber:numberValue];
+    //    self.text = [formattedString stringByReplacingOccurrencesOfString:@"$" withString:@"" options:NSLiteralSearch range:NSMakeRange(0, 1)];
 
     // Handle for max values
 
