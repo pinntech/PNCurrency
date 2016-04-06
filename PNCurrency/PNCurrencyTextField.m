@@ -140,8 +140,10 @@
     }
 
     // Format with commas
-    PNCurrency* amount = [[PNCurrency alloc] initWithStringAmount:self.text];
-    self.text = [amount stringAmount];
+    if (![self.text isEqualToString:@""]) {
+        PNCurrency* amount = [[PNCurrency alloc] initWithStringAmount:self.text];
+        self.text = [amount stringAmount];
+    }
 
     // Handle for max values
 
